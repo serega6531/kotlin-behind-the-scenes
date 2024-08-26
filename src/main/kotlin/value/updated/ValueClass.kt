@@ -1,4 +1,4 @@
-package berlin.kotlin.value
+package berlin.kotlin.value.updated
 
 fun main() {
     val email1 = Email("test@gmail.com")
@@ -13,7 +13,7 @@ private fun printHostname(email: Email) {
 }
 
 @JvmInline
-value class Email(
+private value class Email(
     val value: String
 ) {
     init {
