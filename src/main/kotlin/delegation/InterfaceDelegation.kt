@@ -1,7 +1,5 @@
 package berlin.kotlin.delegation
 
-import java.io.Serializable
-
 fun main() {
     val base = BaseImpl(10)
     val derived = Derived(base)
