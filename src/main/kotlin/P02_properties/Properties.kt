@@ -10,7 +10,3 @@ fun main() {
     sameClassMutable = 10
     println(sameClassMutable)
 }
-
-class MyValues {
-
-}
