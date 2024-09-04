@@ -1,4 +1,4 @@
-package berlin.kotlin.inline
+package berlin.kotlin.lambda
 
 fun main() {
     val a = { println(123) }                        // since 2.0 or with -Xlambdas=indy
@@ -6,4 +6,7 @@ fun main() {
 
     println(a)
     println(b)
+
+    a()
+    b()
 }

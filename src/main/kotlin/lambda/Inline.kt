@@ -1,4 +1,4 @@
-package berlin.kotlin.inline
+package berlin.kotlin.lambda
 
 import kotlin.random.Random
 
