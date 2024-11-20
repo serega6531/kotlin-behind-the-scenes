@@ -1,28 +1,34 @@
 package berlin.kotlin.delegation
 
 fun main() {
-    val base = BaseImpl(10)
-    val derived = Derived(base)
+    val base = BaseImpl("base")
+    val derived = DerivedNaive(base)
     derived.print()
-    derived.doSomethingElse()
+    derived.printSomethingElse()
 }
 
 interface Base {
+
     fun print()
 }
 
-class BaseImpl(private val x: Int) : Base {
+class BaseImpl(private val x: String) : Base {
+
     override fun print() { println(x) }
+
 }
 
 class DerivedNaive(private val b: Base) : Base {
+
     override fun print() {
         b.print()
     }
 
-    fun doSomethingElse() = println("abc")
+    fun printSomethingElse() = println("somethingElse")
 }
 
 class Derived(b: Base) : Base by b {
-    fun doSomethingElse() = println("abc")
+
+    fun printSomethingElse() = println("somethingElse")
+
 }
