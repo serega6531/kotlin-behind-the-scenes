@@ -27,7 +27,7 @@ class DerivedManual(private val b: Base) : Base {
     fun printSomethingElse() = println("somethingElse")
 }
 
-class Derived(b: Base) : Base by b {
+class DerivedNative(b: Base) : Base by b {
 
     fun printSomethingElse() = println("somethingElse")
 
