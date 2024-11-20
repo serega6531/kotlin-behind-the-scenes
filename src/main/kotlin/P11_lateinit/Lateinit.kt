@@ -9,4 +9,6 @@ fun main() {
     example = "Test"
 
     println(example)
+
+    println(::example.isInitialized)
 }
