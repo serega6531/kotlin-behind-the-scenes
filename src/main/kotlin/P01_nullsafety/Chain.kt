@@ -1,4 +1,4 @@
-package P01_nullsafety
+package berlin.kotlin.nullsafety
 
 fun main() {
     val a = getNullable()?.get(0)?.length
