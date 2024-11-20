@@ -2,7 +2,7 @@ package berlin.kotlin.delegation
 
 fun main() {
     val base = BaseImpl("base")
-    val derived = DerivedNaive(base)
+    val derived = DerivedManual(base)
     derived.print()
     derived.printSomethingElse()
 }
@@ -18,7 +18,7 @@ class BaseImpl(private val x: String) : Base {
 
 }
 
-class DerivedNaive(private val b: Base) : Base {
+class DerivedManual(private val b: Base) : Base {
 
     override fun print() {
         b.print()
