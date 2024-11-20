@@ -9,8 +9,3 @@ fun main() {
 fun doSomething(someInt: Int = 123, someBool: Boolean = true, someString: String = "abc") {
     println("$someInt $someBool $someString")
 }
-
-@JvmOverloads
-fun doSomethingWithOverloads(someInt: Int = 123, someBool: Boolean = true, someString: String = "abc") {
-    println("$someInt $someBool $someString")
-}

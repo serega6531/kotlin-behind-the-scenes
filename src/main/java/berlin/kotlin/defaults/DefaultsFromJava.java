@@ -1,6 +1,7 @@
 package berlin.kotlin.defaults;
 
-import static berlin.kotlin.defaults.DefaultsKt.*;
+import static berlin.kotlin.defaults.DefaultsKt.doSomething;
+import static berlin.kotlin.defaults.DefaultsWithOverloadsKt.doSomethingWithOverloads;
 
 public class DefaultsFromJava {
 
