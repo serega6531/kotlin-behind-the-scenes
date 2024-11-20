@@ -2,8 +2,11 @@ package berlin.kotlin.delegation
 
 fun main() {
     val test = Test()
+    println("Before")
     test.printValue()
+    println("Between")
     test.printValue()
+    println("After")
 }
 
 private class Test {
