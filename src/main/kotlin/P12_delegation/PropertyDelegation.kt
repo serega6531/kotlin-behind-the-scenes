@@ -11,13 +11,13 @@ fun main() {
 
 private class Test {
 
-    private val value by lazy {
+    private val calculated by lazy {
         Thread.sleep(3000)
         "abc"
     }
 
     fun printValue() {
-        println(value)
+        println(calculated)
     }
 
 }
